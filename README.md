@@ -313,7 +313,7 @@ testOptions {
          
 ## 9. All in one - Full example  
   
-Check out my blog [ChintanKhetiya](https://chintankhetiya.wordpress.com/author/chintankhetiya/) for more details and full source code you can get from my [Github repository](https://github.com/khetiyachintan).  
+Check out my blog [ChintanKhetiya](https://chintankhetiya.wordpress.com/author/chintankhetiya/) for more details and full source code you can get from my [Github repository](https://github.com/khetiyachintan/MVVM-Architecture-AllInOne).  
   
 ## 10. Conclusion  
     
