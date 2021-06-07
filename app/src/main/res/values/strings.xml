@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AASE-MVVM Architecture</string>
+
+    <string name="msg_network_failure">Sorry! We are unable to detect network connection in your device. Please try after sometime</string>
+    <string name="lbl_pd_title">Loading…</string>
+
+    <string name="lbl_universities">Universities - Called from - %1$s</string>
+
+    <string name="menu_sort_by_name">Sort by name</string>
+    <string name="menu_sort_by_country">Sort by country</string>
+    <string name="menu_exit">Exit</string>
+
+    <!--Font-Family-->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <string name="lbl_network_failure_title">Something went wrong</string>
+    <string name="lbl_network_failure_sub_title">All alien is probably blocking your signal.</string>
+    <string name="lbl_retry">Retry</string>
+    <string name="lbl_data_found">No Records found!</string>
+    <string name="msg_no_fresh_data_found">No fresh data found</string>
+
+</resources>

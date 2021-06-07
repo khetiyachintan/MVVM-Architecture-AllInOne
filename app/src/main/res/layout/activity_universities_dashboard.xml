@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:context=".java.MainJavaActivity"
+        tools:ignore="PrivateResource">
+
+        <include
+            android:id="@+id/layToolbar"
+            layout="@layout/row_toolbar" />
+
+        <View
+            style="@style/ListDivider"
+            android:background="@drawable/shape_shadow" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rv_universities_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_demo_layout="@layout/row_universities_item_shimmer"
+                app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/layNetworkLost"
+            layout="@layout/activity_network_lost"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

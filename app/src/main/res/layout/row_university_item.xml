@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="universitiesList"
+            type="com.chintankhetiya.mvvm.architectural.model.UniversitiesEntity" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            style="@style/UniTitle"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@string/font_family_medium"
+            android:gravity="center|start"
+            android:text="@{universitiesList.name}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCountry"
+            style="@style/UniSubTitle"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@string/font_family_regular"
+            android:gravity="center|start"
+            android:text="@{universitiesList.country}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCode"
+            style="@style/UniSubTitle"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@string/font_family_medium"
+            android:gravity="center|start"
+            android:text="@{universitiesList.code}" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/ListDivider"
+            android:layout_marginTop="21dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/ListDivider"
+            android:background="@drawable/shape_shadow"
+            android:visibility="@{universitiesList.clicked? View.VISIBLE : View.GONE}" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

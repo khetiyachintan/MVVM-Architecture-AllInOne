@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "bfb7c0c69047cc63ff6c3dc08b9d5059",
+    "entities": [
+      {
+        "tableName": "tb_universities",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uni_id` INTEGER PRIMARY KEY AUTOINCREMENT, `isClicked` INTEGER NOT NULL, `name` TEXT NOT NULL, `country` TEXT NOT NULL, `alpha_two_code` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "uniId",
+            "columnName": "uni_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isClicked",
+            "columnName": "isClicked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "country",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "alpha_two_code",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uni_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bfb7c0c69047cc63ff6c3dc08b9d5059')"
+    ]
+  }
+}

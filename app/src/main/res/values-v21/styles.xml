@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppGreenBorderButton" parent="android:Widget.Material.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/btn_retry</item>
+        <item name="android:textColor">@color/green_retry</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">328dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+</resources>
